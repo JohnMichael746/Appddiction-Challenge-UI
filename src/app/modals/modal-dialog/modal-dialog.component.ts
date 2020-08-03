@@ -30,19 +30,7 @@ export class ModalDialogComponent implements OnInit {
   }
 
   onSave() {
-    const ob = {
-      firstName: this.addForm.controls.firstName.value,
-      lastName: this.addForm.controls.lastName.value,
-      career: this.addForm.controls.career.value
-    }
-
-    console.log(ob);
-    this.ps.addPerson(ob).toPromise().then(res => {
-      console.log(res);
-    });
-    this.dialogRef.close({
-      message: 'dialog closed'
-    });
+    
   }
 
 }

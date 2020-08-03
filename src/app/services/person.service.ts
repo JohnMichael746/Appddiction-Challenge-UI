@@ -14,12 +14,4 @@ export class PersonService {
     return this.http.get(`${environment.url}/person/get-all`) as Observable<any>;
   }
 
-  addPerson(ob: any) {
-    return this.http.post(`${environment.url}/person/save`, ob) as Observable<any>;
-  }
-
-  deleteEntry(id: string) {
-    return this.http.post(environment.url + '/person/delete', id) as Observable<any>;
-  }
-
 }
